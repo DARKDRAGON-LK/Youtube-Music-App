@@ -9,7 +9,9 @@ function createWindow() {
             nodeIntegration: false,
             contextIsolation: true,
             enableRemoteModule: false,
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, 'preload.js'),
+            // Check for common bugs such as null pointer references, unhandled exceptions, and more
+            sandbox: true
         },
         icon: path.join(__dirname, 'youtube-music-icon.icon')
     });

@@ -108,3 +108,9 @@ dist
 
 #output
 build
+
+#iss
+aa.iss
+
+#setupfiles
+Setup
