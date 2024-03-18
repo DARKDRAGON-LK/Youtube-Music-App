@@ -1,0 +1,61 @@
+/* Base styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* Custom frame styling */
+/* Custom frame styling */
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Adjust height as needed */
+  background-color: #2d2d2d; /* Dark gray background */
+  color: #ffffff; /* White text color */
+}
+
+.frame-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.frame-text {
+  font-size: 14px;
+}
+
+.frame-icons {
+  display: flex;
+  align-items: center;
+}
+
+.frame-icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  filter: invert(1); /* Invert the icon colors to appear white on dark background */
+}
+
+/* Set default Windows icons as background images */
+.minimize {
+  -webkit-app-region: minimize;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABJRU5ErkJggg==');
+}
+
+.maximize {
+  -webkit-app-region: maximize;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABqElEQVRIS+2UMQ7CMAyEK4KEgnIke7N6uE1DT6Cp5DEKhj0EyHAdrABufCu3tCbiPdPPn1xSd8P9LfYSyOyxS/EZAXPh8QxtHP4rR7AhDXEQHD7eA8YASuvM+z0ZnC1G/DxBK5pAFW5iWdA1tllAeGxDKJG0lM4dRY3lGomAsy7VtBvrlcq8LqYGq6uh7ynAucV9X0e3Vx0hvNSW2fiSmgT7E8sR5UtlcLmIYqRlmz0+YHT+UGZbHW5U7haBBXU9b5TjNl3QvUj1V2GJLJyTxK8AdIhJgXGALjVbXkCg2HczfSTv/BdJ3/I9Ike0wC4ANLqfA1DfEgAAAABJRU5ErkJggg==');
+}
+
+.close {
+  -webkit-app-region: no-drag;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABGUlEQVRIS+2UMQ7CMAyEK4KEgnIke7N6uE1DT6Cp5DEKhj0EyHAdrABufCu3tCbiPdPPn1xSd8P9LfYSyOyxS/EZAXPh8QxtHP4rR7AhDXEQHD7eA8YASuvM+z0ZnC1G/DxBK5pAFW5iWdA1tllAeGxDKJG0lM4dRY3lGomAsy7VtBvrlcq8LqYGq6uh7ynAucV9X0e3Vx0hvNSW2fiSmgT7E8sR5UtlcLmIYqRlmz0+YHT+UGZbHW5U7haBBXU9b5TjNl3QvUj1V2GJLJyTxK8AdIhJgXGALjVbXkCg2HczfSTv/BdJ3/I9Ike0wC4ANLqfA1DfEgAAAABJRU5ErkJggg==');
+}
